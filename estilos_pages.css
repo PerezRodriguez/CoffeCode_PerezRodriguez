@@ -1,0 +1,1154 @@
+/* GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Colores Globlales */
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --gris: #757575;
+    --grisClaro: #ebf1f7;
+    --grisFondo: #b4b1b1;
+}
+
+html {
+    /* Esto es igual a 1rem=10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* Esto es igual a 1rem=10px */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    /* background-image: var(--grisClaro); */
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+
+.titulo-h1 {
+    font-family: "Roboto", sans-serif;
+    color: var(--blanco);
+}
+
+.sombra {
+    -webkit-box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+    box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.divcontenedor {
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+/* Fin de Globales */
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* PRUEBA DE GRID AREA */
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, auto); */
+    grid-template-areas:
+        "header "
+        "main "
+        "footer"
+}
+
+
+/* PRUEBA DE GRID AREA */
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+
+/* Estilos para la barra de navegacion y la imagen de fondo */
+
+.header {
+    grid-area: header;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.nav-bar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 65px;
+    cursor: pointer;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+
+.nav-bar ul li::before {
+    content: "";
+    height: 5px;
+    width: 0;
+    background: rgb(231, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s ease-out;
+}
+
+.nav-bar ul li:hover::before {
+    width: 100%;
+}
+
+/* Fin de los Estilos para la barra de navegacion y la imagen de fondo */
+
+/* ------------------------------------------------------------------------ */
+
+
+/* Estilos para posicionar los textos al centro de la imagen */
+.contenido-hero {
+    height: 50%;
+    /* width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+    text-align: center;
+}
+
+.hero-titulo-h3 {
+    color: var(--blanco);
+    font-size: 6rem;
+    padding: 1rem;
+
+}
+
+.hero-span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10rem;
+    color: var(--blanco);
+    margin: 3rem;
+    padding: 1rem;
+
+}
+
+/* Fin Estilos para posicionar los textos al centro de la imagen */
+
+/* ------------------------------------------------------------------------ */
+
+
+/* inicio Menu*/
+.section__galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__contenedor {
+    display: grid;
+    max-width: 120rem;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; */
+    margin: 2rem 0;
+
+    grid-area: galeria;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+
+}
+
+.div__item {
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.galeria__img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.div__item img {
+    border-radius: 2rem;
+}
+
+.content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.custom-btn {
+    padding: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid var(--gris);
+    border-radius: 1rem;
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+/* Fin Menu */
+/* ------------------------------------------------------------------------ */
+
+/* Inicio PAGE Nosotros */
+.section__nosotros {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "texto-cafe video"
+        "img        texto-granos"
+        "fin__img   fin__img";
+}
+
+.nosotros__media video {
+    grid-area: video;
+    width: 100%;
+
+    display: flex;
+
+}
+
+.nosotros__img {
+    grid-area: img;
+    background-image: url(img/nosotros/granos-nosotros.jpg);
+    width: 100%;
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros__texto--granos {
+    grid-area: texto-granos;
+    width: 100%;
+    height: 40rem;
+}
+
+.nosotros__texto--cafe {
+    grid-area: texto-cafe;
+    width: 100%;
+    height: 40rem;
+}
+
+.nosotros__texto--cafe,
+.nosotros__texto--granos {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.section__nosotros--finimg {
+    grid-area: fin__img;
+    width: 100%;
+    min-height: 60rem;
+    background-image: url(img/nosotros/finNosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1rem;
+}
+
+
+/* Fin Nosotros */
+
+/* ------------------------------------------------------------------------ */
+
+/* inicio contacto */
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__title {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.input .textarea {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+form {
+    height: auto;
+    width: 70%;
+}
+
+.detalle-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.input input,
+.textarea textarea {
+    margin: 2rem;
+    padding: 1rem;
+    width: 93%;
+    border: 0.1rem solid var(--gris);
+    border-radius: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+    margin: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.button input:hover {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+}
+
+.button input {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: var(--grisFondo);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0 2rem;
+}
+
+.button input:nth-child(1) {
+    margin-right: 4rem;
+}
+
+.section__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.section__titulo {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+th,
+td {
+    padding: 1rem;
+}
+
+/* Fin contacto */
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Inicio Reservas */
+
+.reserva__titulo {
+    text-align: center;
+}
+
+.form__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form__lugar label {
+    margin: 3rem;
+}
+
+.form__lugar select {
+    padding: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__lugar option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.form__mayor {
+    flex-direction: column;
+}
+
+.mayor__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.radio__si {
+    margin-right: 3rem;
+}
+
+.radio__no label,
+.radio__si label {
+    margin: 1rem;
+}
+
+.radio__no:hover,
+.radio__si:hover {
+    border-bottom: 0.2rem solid var(--oscuro);
+}
+
+.reservas__visit {
+    margin: 3rem 0;
+}
+
+.visit__input,
+.visit__label {
+    margin-right: 3rem;
+}
+
+.productos__titulo {
+    margin-bottom: 2rem;
+}
+
+.productos__titulo h3 {
+    text-transform: capitalize;
+}
+
+.productos__item {
+    margin: 0 2rem;
+
+}
+
+.div__productos input {
+    margin: 1rem;
+}
+
+.div__comentarios {
+    margin: 2rem;
+}
+
+.comentarios__select {
+    padding: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 3rem;
+}
+
+.div__comentarios option {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.area__textarea {
+    margin-bottom: 2rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 10rem;
+    max-height: 10rem;
+}
+
+.div__bottons input {
+    margin: 2rem;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: 0.1rem solid var(--gris);
+}
+
+.div__bottons input:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+/* Fin Reservas */
+/* --------------------------------------------------------------------------------------------------- */
+
+
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    background-color: var(--grisClaro);
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--oscuro);
+}
+
+.info {
+
+    padding: 1rem;
+    list-style: none;
+}
+
+.info ul h4 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--oscuro);
+}
+
+.info ul li a {
+    color: var(--gris);
+    font-weight: 400;
+}
+
+.sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sociales ul li {
+    color: var(--gris);
+    display: inline-block;
+}
+
+.sociales ul li a i {
+    margin: 2.5rem;
+    font-size: 4rem;
+    color: var(--oscuro);
+}
+
+.sociales ul li a i:hover {
+    font-size: 4rem;
+    color: var(--gris);
+}
+
+ul li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.footer p {
+    color: var(--gris);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fin footer */
+
+
+/* Inicio boton subbir */
+.subir {
+    height: 50px;
+    width: 50px;
+    background-color: var(--grisClaro);
+    border: 2px solid var(--oscuro);
+    position: fixed;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    opacity: .5;
+}
+
+.subir i {
+    color: var(--oscuro);
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.subir i:hover {
+    color: var(--blanco);
+}
+
+.subir:hover {
+    background-color: var(--oscuro);
+}
+
+/* Fin Boton subir */
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* MEDIA QUERYS*/
+
+/* Desktops 1200px or up */
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Inicio  Page Menu 1200px o superior */
+    .section__contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15rem;
+    }
+
+    /* Fin Page Menu 1200px o superior */
+
+    /* inicio page nosotros 1200px o superior */
+    .section__nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'texto-cafe video'
+            'img        texto-granos'
+            'fin__img   fin__img';
+    }
+
+    .nosotros__img {
+
+        height: 30rem;
+
+    }
+
+    .nosotros__texto--granos {
+        grid-area: texto-granos;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .nosotros__texto--cafe {
+        grid-area: texto-cafe;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .section__nosotros--finimg {
+        min-height: 30rem;
+
+    }
+
+    /* inicio page nosotros 1200px o superior */
+
+    /* ----------------------------------------------------- */
+    /* Inicio page Contacto 1200px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .section__titulo {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 1200px */
+    /* ----------------------------------------------------- */
+    /* Inicio page Reserva */
+
+
+    /* Fin page Reserva */
+}
+
+/* Desktops 992px or up */
+@media (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main "
+            "footer";
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh
+    }
+
+    /* Inicio  Page Menu 992px o superior */
+    .section__contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10rem;
+    }
+
+    /* Fin Page Menu 768px o superior */
+
+    /* inicio page nosotros 992px o superior */
+    .section__nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'texto-cafe'
+            'video'
+            'texto-granos'
+            'img'
+            'fin__img';
+    }
+
+    /* Fin page nosotros 993px */
+    /* ----------------------------------------------------- */
+    /* Inicio page Contacto 992px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .section__titulo {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 992px */
+
+    /* ----------------------------------------------------- */
+    /* Inicio page Reserva 992px */
+
+
+    /* Fin page Reserva 992px*/
+}
+
+
+/* Medium Tablets, 768 or up */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .nav-bar {
+        width: 90%;
+        margin: auto;
+        padding: 35px 0;
+        display: wrap;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .nav-bar ul li {
+        margin-top: 2rem;
+    }
+
+    /* Inicio  Page Menu 768px o superior */
+    .section__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    /* Fin Page Menu 768px o superior */
+
+    /* ----------------------------------------------------- */
+
+
+    /* inicio page nosotros 768px o superior */
+    .section__nosotros {
+        width: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            'texto-cafe'
+            'video'
+            'texto-granos'
+            'img'
+            'fin__img';
+    }
+
+    .nosotros__media video {
+        grid-area: video;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .nosotros__img {
+        grid-area: img;
+        background-image: url(img/nosotros/granos-nosotros.jpg);
+        width: 100%;
+        height: 40rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .nosotros__texto--granos {
+        grid-area: texto-granos;
+        width: 100%;
+        height: 40rem;
+    }
+
+    .nosotros__texto--cafe {
+        grid-area: texto-cafe;
+        width: 100%;
+        height: 40rem;
+    }
+
+    .nosotros__texto--cafe,
+    .nosotros__texto--granos {
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .section__nosotros--finimg {
+        grid-area: fin__img;
+        width: 100%;
+        min-height: 40rem;
+        background-image: url(img/nosotros/finNosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom: 1rem;
+    }
+
+    /* Fin page menu 768px o superior */
+    /* -------------------------------------------------------------- */
+
+    /* Inicio page Contacto 768px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .textarea__area {
+        margin-bottom: 3rem;
+        min-width: 50rem;
+        max-width: 50rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 768px */
+
+    /* -------------------------------------------------------------- */
+    /* Inicio page Reserva 768px */
+
+    .form__lugar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    .productos__titulo h3 {
+        text-align: center;
+    }
+
+    .reservas__visit {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .visit__label {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .visit__label,
+    .visit__input {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .div__productos {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    .div__productos input {
+        margin: 1rem;
+    }
+
+    .div__comentarios {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .area__textarea {
+        margin-bottom: 3rem;
+        min-width: 50rem;
+        max-width: 50rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+    
+    .div__bottons{
+        margin-bottom: 3rem;
+    }
+    /* Fin page Reserva 768px*/
+}
+
+
+/* Small phones, 576px  */
+@media (max-width: 576px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50vh
+    }
+
+    .hero-titulo-h3 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .hero-span {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .nav-bar ul li {
+        margin: 0.5rem 1rem;
+    }
+
+    /* -------------------------------------------------------------- */
+
+    /* Page Menu 576px*/
+
+    .section__contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    /* Fin Page Menu 576px */
+
+    /* -------------------------------------------------------------- */
+
+    /* Inicio Page nosotro 576px */
+
+    .section__nosotros {
+        grid-template-areas:
+            'texto-cafe'
+            'video'
+            'texto-granos'
+            'img'
+            'fin__img';
+    }
+
+    .nosotros__img {
+        height: 30rem;
+    }
+
+    .nosotros__texto--granos {
+        height: 30rem;
+    }
+
+    .nosotros__texto--cafe {
+        height: 30rem;
+    }
+
+    .section__nosotros--finimg {
+        min-height: 30rem;
+    }
+
+    /* Fin Page nosotros 576px*/
+
+    /* -------------------------------------------------------------- */
+
+    /* Inicio page Contacto 576px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .section__titulo {
+        text-align: center;
+    }
+
+    .textarea__area {
+        margin-bottom: 3rem;
+        min-width: 37rem;
+        max-width: 37rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+
+    th,
+    td {
+        padding: 0.2rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 576px */
+    /* -------------------------------------------------------------- */
+    /* Inicio page Reserva 576px */
+
+    .form__lugar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    .productos__titulo h3 {
+        text-align: center;
+    }
+
+    .reservas__visit {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .visit__label {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .visit__label,
+    .visit__input {
+        margin: 1rem;
+        font-size: 1.5rem;
+
+    }
+
+
+    .div__productos {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    .div__productos input {
+        margin: 1rem;
+    }
+
+    .div__comentarios {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .area__textarea {
+        margin-bottom: 3rem;
+        min-width: 37rem;
+        max-width: 37rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+
+    .div__bottons{
+        margin-bottom: 3rem;
+    }
+
+    /* Fin page Reserva 576px*/
+}
