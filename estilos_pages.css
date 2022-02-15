@@ -207,11 +207,11 @@ h2 {
 }
 
 /* Inicio Animaciones a las imagenes */
-.item__capa{
+.item__capa {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 83.5%;
+    height: 79%;
     color: var(--blanco);
     text-align: center;
     background: rgba(0, 0, 0, 0.65);
@@ -221,17 +221,17 @@ h2 {
     visibility: hidden;
 }
 
-.div__item:hover > .item__capa{
+.div__item:hover>.item__capa {
     opacity: 1;
     visibility: visible;
 }
 
-.div__item:hover > .item__capa h3{
+.div__item:hover>.item__capa h3 {
     margin-top: 10rem;
     margin-bottom: 1.5rem;
 }
 
-.item__capa h3{
+.item__capa h3 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 12rem;
@@ -239,7 +239,7 @@ h2 {
     margin-top: 3rem;
 }
 
-.item__capa p{
+.item__capa p {
     font-size: 1.5rem;
     line-height: 1.5;
     width: 100%;
@@ -253,6 +253,32 @@ h2 {
     border-radius: 2rem;
 }
 
+.custom-btn {
+    background-image: linear-gradient(to right, #283048 0%, #859398 51%, #283048 100%)
+}
+
+.custom-btn {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.custom-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
 .content-btn {
     display: flex;
     justify-content: center;
@@ -260,7 +286,7 @@ h2 {
     margin: 1rem 0;
 }
 
-.custom-btn {
+/* .custom-btn {
     padding: .5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -269,7 +295,7 @@ h2 {
     border-radius: 1rem;
     background-color: var(--gris);
     color: var(--blanco);
-}
+} */
 
 /* Fin Menu */
 /* ------------------------------------------------------------------------ */
@@ -967,7 +993,7 @@ ul li a {
     /* -------------------------------------------------------------- */
     /* Inicio page Reserva 768px */
 
-    .form__lugar{
+    .form__lugar {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1020,10 +1046,11 @@ ul li a {
         min-height: 20rem;
         max-height: 20rem;
     }
-    
-    .div__bottons{
+
+    .div__bottons {
         margin-bottom: 3rem;
     }
+
     /* Fin page Reserva 768px*/
 }
 
@@ -1136,7 +1163,7 @@ ul li a {
     /* -------------------------------------------------------------- */
     /* Inicio page Reserva 576px */
 
-    .form__lugar{
+    .form__lugar {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1192,7 +1219,7 @@ ul li a {
         max-height: 20rem;
     }
 
-    .div__bottons{
+    .div__bottons {
         margin-bottom: 3rem;
     }
 
