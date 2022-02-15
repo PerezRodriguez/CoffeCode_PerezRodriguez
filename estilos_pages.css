@@ -411,7 +411,29 @@ form {
     font-weight: 400;
 }
 
-.button {
+
+.contac-btn {background-image: linear-gradient(to right, #44A08D 0%, #093637  51%, #44A08D  100%)}
+.contac-btn {
+   margin: 0 4rem 3rem ;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .contac-btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+/* .button {
     margin: 1rem;
     padding: 1rem 0;
     text-align: center;
@@ -434,7 +456,7 @@ form {
 
 .button input:nth-child(1) {
     margin-right: 4rem;
-}
+} */
 
 .section__table {
     display: flex;
@@ -567,7 +589,7 @@ td {
     max-height: 10rem;
 }
 
-.div__bottons input {
+/* .div__bottons input {
     margin: 2rem;
     font-size: 1.5rem;
     padding: 0.7rem;
@@ -579,7 +601,7 @@ td {
 .div__bottons input:hover {
     background-color: var(--gris);
     color: var(--blanco);
-}
+} */
 
 /* Fin Reservas */
 /* --------------------------------------------------------------------------------------------------- */
