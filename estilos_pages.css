@@ -219,6 +219,7 @@ h2 {
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
+    cursor: pointer;
 }
 
 .div__item:hover>.item__capa {
@@ -269,6 +270,7 @@ h2 {
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
+    cursor: pointer;
 }
 
 .custom-btn:hover {
