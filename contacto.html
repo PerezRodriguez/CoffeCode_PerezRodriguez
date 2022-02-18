@@ -8,15 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/1c1c184661.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos_pages.css">
     <title>CoffeCode</title>
 </head>
 
 <body class="grid-container">
-        <!-- inicio del header -->
-        <header class="header">
-            <!-- Inicio del navbar que es la clase de la barra de navegacion -->
-            <nav class="nav-bar font">
+    <!-- inicio del header -->
+    <header class="header">
+
+        <!--NAVBAR CON BOOTSTRAP INICIO  -->
+        <ul class="nav justify-content-center">
+            <a class="nav-link " href="index.html"> <img src="img/logo/logo.png" alt="logo de pagina" class="logo"></a>
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reserva.html">reservas</a>
+            </li>
+        </ul>
+        <!--NAVBAR CON BOOTSTRAP FIN  -->
+
+        <!-- Inicio del navbar que es la clase de la barra de navegacion -->
+        <!-- <nav class="nav-bar font">
                 <a href="index.html"><img src="img/logo/logo.png" alt="logo de pagina" class="logo"></a>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
@@ -25,17 +48,18 @@
                     <li><a href="contacto.html">CONTACTO</a></li>
                     <li><a href="reserva.html">RESERVAS</a></li>
                 </ul>
-            </nav><!-- Fin div Nav bar -->
+            </nav> -->
+        <!-- Fin div Nav bar -->
 
-            <!-- inicio del Contenido donde se sentran 2 divs para posicionar el texto al centro de la imagen -->
+        <!-- inicio del Contenido donde se sentran 2 divs para posicionar el texto al centro de la imagen -->
 
-            <div class="contenido-hero">
-                <h3 class="hero-titulo-h3">Contáctanos</h3>
-            </div><!-- fin div contenido -->
+        <div class="contenido-hero">
+            <h3 class="hero-titulo-h3">Contáctanos</h3>
+        </div><!-- fin div contenido -->
 
-        </header><!-- fin header -->
-   
-        
+    </header><!-- fin header -->
+
+
     <!-- Inicio del Section para el Formulario -->
     <main class="main ">
         <div class="main__title">
@@ -72,36 +96,36 @@
             </div>
         </form>
 
-    
-<hr>
-    <section class="section__table">
-        <h3 class="section__titulo">encuentranos en los siguientes horarios</h3>
-        <table border="" cellspacing="10" cellpadding="20">
-            <tr>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sabado</th>
-                <th>Domingo</th>
-            </tr>
 
-            <tr>
-                <td>DESCANSO</td>
-                <td>18:30 A 23:30</td>
-                <td>18:30 A 23:30</td>
-                <td>18:30 A 23:30</td>
-                <td>18:30 A 00:30</td>
-                <td>18:30 A 00:30</td>
-                <td>18:30 A 00:30</td>
-            </tr>
-        </table>
-        </div>
-        </div>
-    </section>
-</main>
-<!-- Fin del Main  para el Formulario -->
+        <hr>
+        <section class="section__table">
+            <h3 class="section__titulo">encuentranos en los siguientes horarios</h3>
+            <table border="" cellspacing="10" cellpadding="20">
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                </tr>
+
+                <tr>
+                    <td>DESCANSO</td>
+                    <td>18:30 A 23:30</td>
+                    <td>18:30 A 23:30</td>
+                    <td>18:30 A 23:30</td>
+                    <td>18:30 A 00:30</td>
+                    <td>18:30 A 00:30</td>
+                    <td>18:30 A 00:30</td>
+                </tr>
+            </table>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- Fin del Main  para el Formulario -->
 
     <footer class="footer">
         <div class="info">
@@ -122,7 +146,7 @@
                 </li>
             </ul>
         </div>
-        
+
     </footer>
 
     <a href="#" class="subir">

@@ -90,7 +90,69 @@ h2 {
     height: 50vh;
 }
 
+/* ESTILOS NAVBAR CON BOOTSTRAP */
 
+.logo {
+    width: 95px;
+    cursor: pointer;
+}
+
+.nav{
+    width: auto%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link{
+    color: var(--blanco);
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    
+}
+
+.nav-link:hover{
+    background-image: none;
+    color: #fff;
+}
+
+.nav-item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.active{
+    color: rgb(231, 0, 0);
+    text-transform: uppercase;
+}
+
+.nav-item::before{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: rgb(231, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s ease-out;
+}
+.nav-item:hover::before {
+    width: 100%;
+}
+
+/* ESTILOS NAVBAR CON BOOTSTRAP FIN */
+
+
+/* 
 .nav-bar {
     width: 80%;
     margin: auto;
@@ -131,7 +193,7 @@ h2 {
 
 .nav-bar ul li:hover::before {
     width: 100%;
-}
+} */
 
 /* Fin de los Estilos para la barra de navegacion y la imagen de fondo */
 
