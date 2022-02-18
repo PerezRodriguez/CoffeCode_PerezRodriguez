@@ -1155,7 +1155,7 @@ ul li a {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 50vh
+        height: 60vh
     }
 
     .hero-titulo-h3 {
@@ -1169,9 +1169,25 @@ ul li a {
         text-align: center;
     }
 
-    .nav-bar ul li {
-        margin: 0.5rem 1rem;
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
     }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .justify-content-center,
+    .nav{
+        margin:0 ;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
 
     /* -------------------------------------------------------------- */
 
@@ -1195,6 +1211,26 @@ ul li a {
             'img'
             'fin__img';
     }
+
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
+    }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .justify-content-center,
+    .nav{
+        margin:0 ;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
 
     .nosotros__img {
         height: 30rem;
@@ -1225,6 +1261,25 @@ ul li a {
 
     .main__title span {
         font-size: 14px;
+    }
+
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
+    }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .justify-content-center,
+    .nav{
+        margin:0 ;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
     }
 
     .section__titulo {
