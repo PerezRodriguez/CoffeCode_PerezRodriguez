@@ -102,22 +102,17 @@
             <!-- Fin form__mayor -->
 
 
-            <div class="input">
-                <input type="text" name="nombre" placeholder="Escribe tu Nombre">
-            </div>
-
-            <div class="input">
-                <input type="text" name="nombre" placeholder="Escribe tu Apellido">
-            </div>
-
-            <div class="input">
-                <input type="number" placeholder="Escribe tu Teléfono">
-            </div>
-
-            <div class="input">
-                <input type="email" placeholder="Escribe tu Correo">
-            </div>
-
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Escribe tu Nombre">
+                </div>
+                <div class="col">
+                    <input type="number"  class="form-control" placeholder="Escribe tu Teléfono">
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="Escribe tu Correo">
+                </div>
+    
             <div class="reservas__visit form__details">
                 <label class="visit__label" for="">Fecha en la que visitaste el establecimiento</label>
 
@@ -165,7 +160,7 @@
             <div class="div__comentarios form__details">
                 <label for="">¿Qué que gustaria comentarnos?</label>
 
-                <select class="comentarios__select" name="lugar" id=" establecimiento">
+                <select class="comentarios__select form__details" name="lugar" id=" establecimiento">
                     <option selected value="0">Elige una Opción</option>
                     <option value="">Queja</option>
                     <option value="">Reclamo</option>
@@ -175,10 +170,10 @@
                 </select>
             </div>
             <!-- Fin comentarios__select-->
-
-            <div class="div__area form__details">
-                <textarea class="area__textarea" name="comentarios" id="" cols="30" rows="10"
-                    placeholder="Escribe tus comentarios"></textarea>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control area" id="exampleFormControlTextarea1"
+                    placeholder="Escribe tus comentarios" rows="3"></textarea>
             </div>
 
             <div class="content-btn">

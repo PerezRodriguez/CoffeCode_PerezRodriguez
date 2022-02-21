@@ -273,7 +273,7 @@ h2 {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 79%;
+    height: 77.5%;
     color: var(--blanco);
     text-align: center;
     background: rgba(0, 0, 0, 0.65);
@@ -458,17 +458,19 @@ h2 {
 }
 
 .col{
-    width: 95%;
+    width: 75%;
     margin: 1rem 0;
 }
 
 .form-group{
-    width: 91.5%;
+    width: 81.5%;
+    font-size: 2rem;
   
 }
 
 .form-control{
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
     padding: .5rem;
     font-family: 'Roboto', sans-serif;
 }
@@ -976,7 +978,7 @@ ul li a {
 
 
 /* Medium Tablets, 768 or up */
-@media (max-width: 768px) and (min-width: 577px ) { 
+@media (max-width: 768px) and (min-width: 601px ) { 
     
     body {
         font-size: 14px;
@@ -1094,33 +1096,44 @@ ul li a {
         font-size: 14px;
     }
 
-    /* Form con bootstrap inicio */
+   /* Form con bootstrap inicio */
 .row{
-    width: 70rem;
+    border: 2px solid blue;
+    width: 55rem;
 }
 
 .col{
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60rem;
+    width: 45rem;
     margin: 1rem 0;
 }
 
 .form-group{
-    width: 57rem;
+    width: 43rem;
+    
 }
 
 .form-control{
+    text-align: center;
     align-items: center;
     font-size: 1.5rem;
-    padding: .5rem;
+    padding: 2.5rem;
     font-family: 'Roboto', sans-serif;
 }
 
 .area{
     max-height: 15rem;
     min-height: 5rem;
+}
+.content-btn{
+    display: inline-block;
+}
+
+.contac-btn{
+    width: 43rem;
 }
 
 /* Form con bootstrap Fin */
@@ -1266,6 +1279,16 @@ ul li a {
     .section__contenedor {
         grid-template-columns: 1fr;
     }
+
+    /* Inicio Animaciones a las imagenes */
+    
+    .div__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Fin Animaciones a las imagenes */
 
     /* Fin Page Menu 576px */
 
@@ -1428,6 +1451,9 @@ ul li a {
     /* -------------------------------------------------------------- */
     /* Inicio page Reserva 576px */
 
+    .form__details{
+        font-size: 1.5rem;
+    }
     .form__lugar {
         display: flex;
         flex-direction: column;
@@ -1456,7 +1482,6 @@ ul li a {
     .visit__input {
         margin: 1rem;
         font-size: 1.5rem;
-
     }
 
 
