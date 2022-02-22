@@ -88,11 +88,42 @@ h2 {
 
 /* ESTILOS NAVBAR CON BOOTSTRAP */
 
+/* Estilos para poder quitar el bg y hacerlo transparente */
+.bg-dark{
+    margin-top: 3rem;
+}
 
 .navbar-brand{
     background: var(--oscuro);
     border-radius: 2rem;
 }
+
+
+.bg-dark{
+    background: rgba(255, 255, 255,0.6) !important;
+    z-index: 20;
+    
+}
+
+@media (min-width: 769px) {
+    .bg-dark{
+        background-color: transparent !important;
+    }
+
+    .nav-link{
+        color: var(--blanco) !important;
+        font-size: 3.5rem;
+        text-transform: capitalize;  
+    }
+
+    .navbar-brand{
+        background:transparent;
+        border-radius: 2rem;
+    }
+     
+}
+/* Estilos para poder quitar el bg y hacerlo transparente */
+
 
  .logo {
     width: 95px;
@@ -105,7 +136,7 @@ h2 {
 }
 
 .nav-link{
-    color: var(--blanco);
+    color: var(--oscuro);
     font-size: 3.5rem;
     text-transform: capitalize;
     
@@ -124,8 +155,8 @@ h2 {
 }
 
 .active{
-    color: rgb(231, 0, 0) !important;
-    text-transform: uppercase;
+    color: rgb(231, 0, 0) !important ;
+    text-transform: uppercase ;
 }
 
 .nav-item::before{
@@ -144,7 +175,7 @@ h2 {
 
 /* ESTILOS NAVBAR CON BOOTSTRAP FIN */
 
-
+/* Estilos nav sin bootstrap inicio */
 /*
  .navbar__menu--lista{
     list-style: none;
@@ -177,6 +208,7 @@ h2 {
 .navbar__menu--lista:hover::before {
     width: 100%;
 }  */
+/* Estilos nav sin bootstrap inicio */
 
 /* Fin de los Estilos para la barra de navegacion y la imagen de fondo */
 

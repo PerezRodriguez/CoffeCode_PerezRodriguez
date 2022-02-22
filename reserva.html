@@ -17,9 +17,35 @@
 <body class="grid-container">
     <!-- inicio del header -->
     <header class="header ">
-
         <!--NAVBAR CON BOOTSTRAP INICIO  -->
-        <ul class="nav justify-content-center">
+
+        <!-- Se agrego el bg-dark para elminar el bg bg-light de nav para poder hacer transparente el nav -->
+        <div class="bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo/logo.png" alt="logo de pagina"
+                            class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item"><a class="nav-link " href="index.html">inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">contacto</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="reserva.html">reservas</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- <ul class="nav justify-content-center">
             <a class="nav-link " href="index.html"> <img src="img/logo/logo.png" alt="logo de pagina" class="logo"></a>
             <li class="nav-item ">
                 <a class="nav-link" href="index.html">inicio</a>
@@ -36,7 +62,7 @@
             <li class="nav-item">
                 <a class="nav-link active" href="reserva.html">reservas</a>
             </li>
-        </ul>
+        </ul> -->
         <!--NAVBAR CON BOOTSTRAP FIN  -->
 
 
@@ -107,79 +133,79 @@
                     <input type="text" class="form-control" placeholder="Escribe tu Nombre">
                 </div>
                 <div class="col">
-                    <input type="number"  class="form-control" placeholder="Escribe tu Teléfono">
+                    <input type="number" class="form-control" placeholder="Escribe tu Teléfono">
                 </div>
                 <div class="col">
                     <input type="email" class="form-control" placeholder="Escribe tu Correo">
                 </div>
-    
-            <div class="reservas__visit form__details">
-                <label class="visit__label" for="">Fecha en la que visitaste el establecimiento</label>
 
-                <input class="visit__input" type="date">
+                <div class="reservas__visit form__details">
+                    <label class="visit__label" for="">Fecha en la que visitaste el establecimiento</label>
 
-                <label class="visit__label" for="">Horario</label>
+                    <input class="visit__input" type="date">
 
-                <input class="visit__input" type="time">
-            </div>
-            <!-- Fin reservas__visit -->
+                    <label class="visit__label" for="">Horario</label>
 
-            <div class="productos__titulo form__details">
-                <h3>Nos gustaria saber los productos que consumiste</h3>
-            </div>
-            <!-- Fin productos__titulo-->
+                    <input class="visit__input" type="time">
+                </div>
+                <!-- Fin reservas__visit -->
 
-            <div class="div__productos form__details">
-                <div class="productos__item form__details">
-                    <input type="checkbox"><label for="">Americano</label>
+                <div class="productos__titulo form__details">
+                    <h3>Nos gustaria saber los productos que consumiste</h3>
+                </div>
+                <!-- Fin productos__titulo-->
+
+                <div class="div__productos form__details">
+                    <div class="productos__item form__details">
+                        <input type="checkbox"><label for="">Americano</label>
+                    </div>
+
+                    <div class="productos__item form__details">
+                        <input type="checkbox"><label for="">Latte</label>
+                    </div>
+
+                    <div class="productos__item form__details">
+                        <input type="checkbox"><label for="">Capuchino</label>
+                    </div>
+
+                    <div class="productos__item form__details">
+                        <input type="checkbox"><label for="">Crepa Dulce</label>
+                    </div>
+
+                    <div class="productos__item form__details">
+                        <input type="checkbox"><label for="">Crepa Salada</label>
+                    </div>
+
+                    <div class="productos__item form__details">
+                        <input type="checkbox"><label for="">Waffle</label>
+                    </div>
+
+                </div>
+                <!-- fin div__productos -->
+
+                <div class="div__comentarios form__details">
+                    <label for="">¿Qué que gustaria comentarnos?</label>
+
+                    <select class="comentarios__select form__details" name="lugar" id=" establecimiento">
+                        <option selected value="0">Elige una Opción</option>
+                        <option value="">Queja</option>
+                        <option value="">Reclamo</option>
+                        <option value="">Devolucion</option>
+                        <option value="">Felicitaciones</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- Fin comentarios__select-->
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control area" id="exampleFormControlTextarea1"
+                        placeholder="Escribe tus comentarios" rows="3"></textarea>
                 </div>
 
-                <div class="productos__item form__details">
-                    <input type="checkbox"><label for="">Latte</label>
+                <div class="content-btn">
+                    <button class="contac-btn">Enviar</button>
+                    <button class="contac-btn">Borrar</button>
                 </div>
-
-                <div class="productos__item form__details">
-                    <input type="checkbox"><label for="">Capuchino</label>
-                </div>
-
-                <div class="productos__item form__details">
-                    <input type="checkbox"><label for="">Crepa Dulce</label>
-                </div>
-
-                <div class="productos__item form__details">
-                    <input type="checkbox"><label for="">Crepa Salada</label>
-                </div>
-
-                <div class="productos__item form__details">
-                    <input type="checkbox"><label for="">Waffle</label>
-                </div>
-
-            </div>
-            <!-- fin div__productos -->
-
-            <div class="div__comentarios form__details">
-                <label for="">¿Qué que gustaria comentarnos?</label>
-
-                <select class="comentarios__select form__details" name="lugar" id=" establecimiento">
-                    <option selected value="0">Elige una Opción</option>
-                    <option value="">Queja</option>
-                    <option value="">Reclamo</option>
-                    <option value="">Devolucion</option>
-                    <option value="">Felicitaciones</option>
-                    </optgroup>
-                </select>
-            </div>
-            <!-- Fin comentarios__select-->
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control area" id="exampleFormControlTextarea1"
-                    placeholder="Escribe tus comentarios" rows="3"></textarea>
-            </div>
-
-            <div class="content-btn">
-                <button class="contac-btn">Enviar</button>
-                <button class="contac-btn">Borrar</button>
-            </div>
         </form>
 
     </main>

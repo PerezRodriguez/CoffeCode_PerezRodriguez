@@ -92,12 +92,54 @@ h2 {
 
 /* ESTILOS NAVBAR CON BOOTSTRAP */
 
+/* Estilos para poder quitar el bg y hacerlo transparente */
+.bg-dark {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.navbar-brand {
+    background: var(--oscuro);
+    border-radius: 2rem;
+}
+
+
+.bg-dark {
+    background: rgba(255, 255, 255, 0.6) !important;
+    z-index: 20;
+
+}
+
+@media (min-width: 769px) {
+    .bg-dark {
+        background-color: transparent !important;
+    }
+
+    .nav-link {
+        color: var(--blanco) !important;
+        font-size: 3.5rem;
+        text-transform: capitalize;
+    }
+
+    .navbar-brand {
+        background: transparent;
+        border-radius: 2rem;
+    }
+
+    .bg-dark {
+        margin-top: 3rem;
+    }
+
+}
+
+/* Estilos para poder quitar el bg y hacerlo transparente */
+
 .logo {
     width: 95px;
     cursor: pointer;
 }
 
-.nav{
+.nav {
     width: auto%;
     margin: auto;
     padding: 35px 0;
@@ -106,36 +148,36 @@ h2 {
     justify-content: space-between;
 }
 
-.nav-item{
+.nav-item {
     display: flex;
     justify-content: space-around;
 }
 
-.nav-link{
+.nav-link {
     color: var(--blanco);
     font-size: 3.5rem;
     text-transform: capitalize;
-    
+
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-image: none;
     color: #fff;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
-.active{
-    color: rgb(231, 0, 0);
+.active {
+    color: rgb(231, 0, 0) !important;
     text-transform: uppercase;
 }
 
-.nav-item::before{
+.nav-item::before {
     content: "";
     height: 5px;
     width: 0;
@@ -145,9 +187,11 @@ h2 {
     bottom: -10px;
     transition: 0.4s ease-out;
 }
+
 .nav-item:hover::before {
     width: 100%;
 }
+
 /* ESTILOS NAVBAR CON BOOTSTRAP FIN */
 
 
@@ -448,33 +492,33 @@ h2 {
 }
 
 /* Form con bootstrap inicio */
-.row{
+.row {
     width: 85rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.col{
+.col {
     width: 75%;
     margin: 1rem 0;
 }
 
-.form-group{
+.form-group {
     width: 81.5%;
     font-size: 2rem;
-  
+
 }
 
-.form-control{
+.form-control {
     text-align: center;
     font-size: 2rem;
     padding: .5rem;
     font-family: 'Roboto', sans-serif;
 }
 
-.area{
+.area {
     max-height: 15rem;
     min-height: 5rem;
 }
@@ -509,25 +553,29 @@ form {
 } */
 
 
-.contac-btn {background-image: linear-gradient(to right, #44A08D 0%, #093637  51%, #44A08D  100%)}
 .contac-btn {
-   margin: 0 4rem 3rem ;
-   padding: 5px 15px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
- }
+    background-image: linear-gradient(to right, #44A08D 0%, #093637 51%, #44A08D 100%)
+}
 
- .contac-btn:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
+.contac-btn {
+    margin: 0 4rem 3rem;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.contac-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
 
 
 /* .button {
@@ -884,7 +932,7 @@ ul li a {
         text-align: center;
     }
 
-    
+
 
     th,
     td {
@@ -977,8 +1025,8 @@ ul li a {
 
 
 /* Medium Tablets, 768 or up */
-@media (max-width: 768px) and (min-width: 601px ) { 
-    
+@media (max-width: 768px) and (min-width: 601px) {
+
     body {
         font-size: 14px;
     }
@@ -990,7 +1038,7 @@ ul li a {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 50vh;
+        height: 80vh;
     }
 
     .nav-bar {
@@ -1010,6 +1058,13 @@ ul li a {
     .section__contenedor {
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
+    }
+
+    .hero-titulo-h3,
+    .contenido-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Fin Page Menu 768px o superior */
@@ -1095,47 +1150,48 @@ ul li a {
         font-size: 14px;
     }
 
-   /* Form con bootstrap inicio */
-.row{
-    border: 2px solid blue;
-    width: 55rem;
-}
+    /* Form con bootstrap inicio */
+    .row {
+        border: 2px solid blue;
+        width: 55rem;
+    }
 
-.col{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45rem;
-    margin: 1rem 0;
-}
+    .col {
 
-.form-group{
-    width: 43rem;
-    
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45rem;
+        margin: 1rem 0;
+    }
 
-.form-control{
-    text-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    font-family: 'Roboto', sans-serif;
-}
+    .form-group {
+        width: 43rem;
 
-.area{
-    max-height: 15rem;
-    min-height: 5rem;
-}
-.content-btn{
-    display: inline-block;
-}
+    }
 
-.contac-btn{
-    width: 43rem;
-}
+    .form-control {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
 
-/* Form con bootstrap Fin */
+    .area {
+        max-height: 15rem;
+        min-height: 5rem;
+    }
+
+    .content-btn {
+        display: inline-block;
+    }
+
+    .contac-btn {
+        width: 43rem;
+    }
+
+    /* Form con bootstrap Fin */
 
     /* .textarea__area {
         margin-bottom: 3rem;
@@ -1235,9 +1291,11 @@ ul li a {
         height: 60vh
     }
 
-    .hero-titulo-h3 {
-        margin-top: 0;
-        text-align: center;
+    .hero-titulo-h3,
+    .contenido-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 5rem;
     }
 
@@ -1257,17 +1315,17 @@ ul li a {
     }
 
     .justify-content-center,
-    .nav{
+    .nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin:0 ;
+        margin: 0;
     }
 
     .nav-link {
         display: inline-block;
         font-size: 0.5rem;
-        
+
     }
 
 
@@ -1280,14 +1338,14 @@ ul li a {
     }
 
     /* Inicio Animaciones a las imagenes */
-    
-    .div__item{
+
+    .div__item {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-/* Fin Animaciones a las imagenes */
+    /* Fin Animaciones a las imagenes */
 
     /* Fin Page Menu 576px */
 
@@ -1315,8 +1373,8 @@ ul li a {
     }
 
     .justify-content-center,
-    .nav{
-        margin:0 ;
+    .nav {
+        margin: 0;
     }
 
     .nav-link {
@@ -1366,8 +1424,8 @@ ul li a {
     }
 
     .justify-content-center,
-    .nav{
-        margin:0 ;
+    .nav {
+        margin: 0;
     }
 
     .nav-link {
@@ -1378,45 +1436,46 @@ ul li a {
         text-align: center;
     }
 
-        /* Form con bootstrap inicio */
-.row{
-    width: 35rem;
-}
+    /* Form con bootstrap inicio */
+    .row {
+        width: 35rem;
+    }
 
-.col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    margin: 1rem 0;
-}
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        margin: 1rem 0;
+    }
 
-.form-group{
-    width: 27rem;
-    
-}
+    .form-group {
+        width: 27rem;
 
-.form-control{
-    text-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    font-family: 'Roboto', sans-serif;
-}
+    }
 
-.area{
-    max-height: 15rem;
-    min-height: 5rem;
-}
-.content-btn{
-    display: inline-block;
-}
+    .form-control {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
 
-.contac-btn{
-    width: 27rem;
-}
+    .area {
+        max-height: 15rem;
+        min-height: 5rem;
+    }
 
-/* Form con bootstrap Fin */
+    .content-btn {
+        display: inline-block;
+    }
+
+    .contac-btn {
+        width: 27rem;
+    }
+
+    /* Form con bootstrap Fin */
 
     /* .textarea__area {
         margin-bottom: 3rem;
@@ -1426,22 +1485,22 @@ ul li a {
         max-height: 20rem;
     } */
 
-    .section__table{
+    .section__table {
         width: 30rem;
     }
 
-    .section__titulo{
+    .section__titulo {
         font-size: 2rem;
     }
 
     th,
     td {
-        padding: 0.26rem ;
+        padding: 0.26rem;
         text-align: center;
         font-size: 1.2rem;
     }
 
-    .info{
+    .info {
         font-size: 2rem;
         margin: 1rem;
     }
@@ -1450,9 +1509,10 @@ ul li a {
     /* -------------------------------------------------------------- */
     /* Inicio page Reserva 576px */
 
-    .form__details{
+    .form__details {
         font-size: 1.5rem;
     }
+
     .form__lugar {
         display: flex;
         flex-direction: column;
