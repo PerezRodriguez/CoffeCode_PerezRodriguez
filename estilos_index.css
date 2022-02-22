@@ -714,7 +714,6 @@ ul li a {
 
     /* Nuestro cafe */
     .section__nuestro {
-        border: 2px solid blue;
         grid-area: nuestro;
         min-height: 20rem;
         width: 100%;
@@ -742,9 +741,7 @@ ul li a {
 
     
     /* Carrusel Inicio */
-    .carousel{
-        border: 2px solid blue;
-    }
+    
     .carousel-inner {
         width: 40rem;
         height: 25rem;
