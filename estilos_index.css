@@ -88,18 +88,15 @@ h2 {
 
 /* ESTILOS NAVBAR CON BOOTSTRAP */
 
+
+.navbar-brand{
+    background: var(--oscuro);
+    border-radius: 2rem;
+}
+
  .logo {
     width: 95px;
     cursor: pointer;
-}
-
-.nav{
-    width: auto%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .nav-item{
@@ -127,7 +124,7 @@ h2 {
 }
 
 .active{
-    color: rgb(231, 0, 0);
+    color: rgb(231, 0, 0) !important;
     text-transform: uppercase;
 }
 
