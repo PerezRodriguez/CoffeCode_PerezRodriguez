@@ -64,7 +64,9 @@ h2 {
   display: grid;
   /* grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, auto); */
-      grid-template-areas: "header " "main " "footer";
+      grid-template-areas: "header "
+ "main "
+ "footer";
 }
 
 /* PRUEBA DE GRID AREA */
@@ -91,12 +93,13 @@ h2 {
 
 .navbar-brand {
   background: var(--oscuro);
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .bg-dark {
   background: rgba(255, 255, 255, 0.6) !important;
   z-index: 20;
+  margin-top: 0;
 }
 
 @media (min-width: 769px) {
@@ -119,7 +122,7 @@ h2 {
 
 /* Estilos para poder quitar el bg y hacerlo transparente */
 .logo {
-  width: 95px;
+  width: 5rem;
   cursor: pointer;
 }
 
@@ -406,7 +409,9 @@ h2 {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
-      grid-template-areas: "texto-cafe video" "img        texto-granos" "fin__img   fin__img";
+      grid-template-areas: "texto-cafe video"
+ "img        texto-granos"
+ "fin__img   fin__img";
 }
 
 .nosotros__media video {
@@ -931,7 +936,9 @@ ul li a {
         grid-template-columns: 1fr;
     -ms-grid-rows: (auto)[3];
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: 'texto-cafe video' 'img        texto-granos' 'fin__img   fin__img';
+        grid-template-areas: 'texto-cafe video'
+ 'img        texto-granos'
+ 'fin__img   fin__img';
   }
   .nosotros__img {
     height: 30rem;
@@ -983,7 +990,9 @@ ul li a {
     font-size: 16px;
   }
   .grid-container {
-        grid-template-areas: "header" "main " "footer";
+        grid-template-areas: "header"
+ "main "
+ "footer";
   }
   .header {
     -ms-grid-row: 1;
@@ -1010,7 +1019,11 @@ ul li a {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+        grid-template-areas: 'texto-cafe'
+ 'video'
+ 'texto-granos'
+ 'img'
+ 'fin__img';
   }
   /* Fin page nosotros 993px */
   /* ----------------------------------------------------- */
@@ -1106,7 +1119,11 @@ ul li a {
     width: 100%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+        grid-template-areas: 'texto-cafe'
+ 'video'
+ 'texto-granos'
+ 'img'
+ 'fin__img';
   }
   .nosotros__media video {
     -ms-grid-row: 2;
@@ -1394,7 +1411,11 @@ ul li a {
   /* -------------------------------------------------------------- */
   /* Inicio Page nosotro 576px */
   .section__nosotros {
-        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+        grid-template-areas: 'texto-cafe'
+ 'video'
+ 'texto-granos'
+ 'img'
+ 'fin__img';
   }
   .logo {
     width: 7.5rem;

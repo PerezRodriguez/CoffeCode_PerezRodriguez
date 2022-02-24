@@ -82,12 +82,13 @@ h2 {
 
 .navbar-brand {
   background: var(--oscuro);
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .bg-dark {
   background: rgba(255, 255, 255, 0.6) !important;
   z-index: 20;
+  margin-top: 0;
 }
 
 @media (min-width: 769px) {
@@ -107,7 +108,7 @@ h2 {
 
 /* Estilos para poder quitar el bg y hacerlo transparente */
 .logo {
-  width: 95px;
+  width: 5rem;
   cursor: pointer;
 }
 
