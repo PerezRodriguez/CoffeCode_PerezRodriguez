@@ -258,8 +258,13 @@ h2 {
 }
 
 /* Fin Estilos para posicionar los textos al centro de la imagen */
+
+
 /* ------------------------------------------------------------------------ */
+
+
 /* inicio Menu*/
+
 /* .section__galeria {
     display: flex;
     justify-content: center;
@@ -1200,7 +1205,7 @@ ul li a {
   }
   /* Form con bootstrap inicio */
   .row {
-    border: 2px solid blue;
+
     width: 55rem;
   }
   .col {
@@ -1613,4 +1618,4 @@ ul li a {
   }
   /* Fin page Reserva 576px*/
 }
-/*# sourceMappingURL=estilos_pages.css.map */
+# sourceMappingURL=estilos_pages.css.map
