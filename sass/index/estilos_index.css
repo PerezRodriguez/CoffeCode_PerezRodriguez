@@ -17,14 +17,14 @@ html {
 body {
   /* Esto es igual a 1rem=10px */
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* background-image:$grisClaro; */
 }
 
 h2 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 3rem;
   padding: 2rem;
 }
@@ -126,7 +126,7 @@ h2 {
 
 .nav-link:hover {
   background-image: none;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .nav-item {
@@ -174,7 +174,7 @@ h2 {
 }
 
 .hero__titulo {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -184,7 +184,7 @@ h2 {
 }
 
 .titulo__h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12rem;
   color: #FFFFFF;
   margin: 3rem;
@@ -196,7 +196,7 @@ h2 {
   margin: 2rem;
   padding: 1rem;
   font-size: 4rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -308,7 +308,7 @@ h2 {
 .encuentranos__h3 {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -401,7 +401,7 @@ ul li {
 }
 
 ul li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -411,7 +411,7 @@ ul li a {
   font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Fin footer */

@@ -76,7 +76,7 @@
 
 .nav-link:hover{
     background-image: none;
-    color: #fff;
+    color: $blanco;
 }
 
 .nav-item{
@@ -120,7 +120,7 @@
 }
 
 .hero__titulo {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuentePrincipal;
     display: inline-block;
     justify-content: center;
     text-align: center;
@@ -129,7 +129,7 @@
 
 
 .titulo__h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuentePrincipal;
     font-size: 12rem;
     color:$blanco;
     margin: 3rem;
@@ -141,6 +141,6 @@
     margin: 2rem;
     padding: 1rem;
     font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuentePrincipal;
     font-weight: 400;
 }

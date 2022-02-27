@@ -1,0 +1,716 @@
+
+/* Desktops 1200px or up */
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Inicio  Page Menu 1200px o superior */
+    .section__contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15rem;
+    }
+
+    /* Fin Page Menu 1200px o superior */
+
+    /* inicio page nosotros 1200px o superior */
+    .section__nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'texto-cafe video'
+            'img        texto-granos'
+            'fin__img   fin__img';
+    }
+
+    .nosotros__img {
+
+        height: 30rem;
+
+    }
+
+    .nosotros__texto--granos {
+        grid-area: texto-granos;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .nosotros__texto--cafe {
+        grid-area: texto-cafe;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .section__nosotros--finimg {
+        min-height: 30rem;
+
+    }
+
+    /* inicio page nosotros 1200px o superior */
+
+    /* ----------------------------------------------------- */
+    /* Inicio page Contacto 1200px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .section__titulo {
+        text-align: center;
+    }
+
+
+
+    th,
+    td {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 1200px */
+    /* ----------------------------------------------------- */
+    /* Inicio page Reserva */
+
+
+    /* Fin page Reserva */
+}
+
+/* Desktops 992px or up */
+@media (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main "
+            "footer";
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh
+    }
+
+    /* Inicio  Page Menu 992px o superior */
+    .section__contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10rem;
+    }
+
+    /* Fin Page Menu 768px o superior */
+
+    /* inicio page nosotros 992px o superior */
+    .section__nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'texto-cafe'
+            'video'
+            'texto-granos'
+            'img'
+            'fin__img';
+    }
+
+    /* Fin page nosotros 993px */
+    /* ----------------------------------------------------- */
+    /* Inicio page Contacto 992px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .section__titulo {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 992px */
+
+    /* ----------------------------------------------------- */
+    /* Inicio page Reserva 992px */
+
+
+    /* Fin page Reserva 992px*/
+}
+
+
+/* Medium Tablets, 768 or up */
+@media (max-width: 768px) and (min-width: 601px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .nav-bar {
+        width: 90%;
+        margin: auto;
+        padding: 35px 0;
+        display: wrap;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .nav-bar ul li {
+        margin-top: 2rem;
+    }
+
+    /* Inicio  Page Menu 768px o superior */
+    .section__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+
+    .hero-titulo-h3,
+    .contenido-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Fin Page Menu 768px o superior */
+
+    /* ----------------------------------------------------- */
+
+
+    /* inicio page nosotros 768px o superior */
+    .section__nosotros {
+        width: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            'texto-cafe'
+            'video'
+            'texto-granos'
+            'img'
+            'fin__img';
+    }
+
+    .nosotros__media video {
+        grid-area: video;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .nosotros__img {
+        grid-area: img;
+        background-image: url(img/nosotros/granos-nosotros.jpg);
+        width: 100%;
+        height: 40rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .nosotros__texto--granos {
+        grid-area: texto-granos;
+        width: 100%;
+        height: 40rem;
+    }
+
+    .nosotros__texto--cafe {
+        grid-area: texto-cafe;
+        width: 100%;
+        height: 40rem;
+    }
+
+    .nosotros__texto--cafe,
+    .nosotros__texto--granos {
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .section__nosotros--finimg {
+        grid-area: fin__img;
+        width: 100%;
+        min-height: 40rem;
+        background-image: url(img/nosotros/finNosotros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom: 1rem;
+    }
+
+    /* Fin page nosotros 768px o superior */
+    /* -------------------------------------------------------------- */
+
+    /* Inicio page Contacto 768px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    /* Form con bootstrap inicio */
+    .row {
+        border: 2px solid blue;
+        width: 55rem;
+    }
+
+    .col {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45rem;
+        margin: 1rem 0;
+    }
+
+    .form-group {
+        width: 43rem;
+
+    }
+
+    .form-control {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        font-family: $fuentePrincipal;
+    }
+
+    .area {
+        max-height: 15rem;
+        min-height: 5rem;
+    }
+
+    .content-btn {
+        display: inline-block;
+    }
+
+    .contac-btn {
+        width: 43rem;
+    }
+
+    /* Form con bootstrap Fin */
+
+    /* .textarea__area {
+        margin-bottom: 3rem;
+        min-width: 50rem;
+        max-width: 50rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    } */
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Fin page Contacto 768px */
+
+    /* -------------------------------------------------------------- */
+    /* Inicio page Reserva 768px */
+
+    .form__lugar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    .productos__titulo h3 {
+        text-align: center;
+    }
+
+    .reservas__visit {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .visit__label {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .visit__label,
+    .visit__input {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .div__productos {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    .div__productos input {
+        margin: 1rem;
+    }
+
+    .div__comentarios {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .area__textarea {
+        margin-bottom: 3rem;
+        min-width: 50rem;
+        max-width: 50rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+
+    .div__bottons {
+        margin-bottom: 3rem;
+    }
+
+    /* Fin page Reserva 768px*/
+}
+
+
+/* Small phones, 576px  */
+@media (max-width: 576px) and (min-width: 0px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60vh
+    }
+
+    .hero-titulo-h3,
+    .contenido-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+    }
+
+    .hero-span {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
+    }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .justify-content-center,
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-link {
+        display: inline-block;
+        font-size: 0.5rem;
+
+    }
+
+
+    /* -------------------------------------------------------------- */
+
+    /* Page Menu 576px*/
+
+    .section__contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    /* Inicio Animaciones a las imagenes */
+
+    .div__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Fin Animaciones a las imagenes */
+
+    /* Fin Page Menu 576px */
+
+    /* -------------------------------------------------------------- */
+
+    /* Inicio Page nosotro 576px */
+
+    .section__nosotros {
+        grid-template-areas:
+            'texto-cafe'
+            'video'
+            'texto-granos'
+            'img'
+            'fin__img';
+    }
+
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
+    }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .justify-content-center,
+    .nav {
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+
+    .nosotros__img {
+        height: 30rem;
+    }
+
+    .nosotros__texto--granos {
+        height: 30rem;
+    }
+
+    .nosotros__texto--cafe {
+        height: 30rem;
+    }
+
+    .section__nosotros--finimg {
+        min-height: 30rem;
+    }
+
+    /* Fin Page nosotros 576px*/
+
+    /* -------------------------------------------------------------- */
+
+    /* Inicio page Contacto 576px */
+
+    .main__title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main__title span {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
+    }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .justify-content-center,
+    .nav {
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .section__titulo {
+        text-align: center;
+    }
+
+    /* Form con bootstrap inicio */
+    .row {
+        width: 35rem;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        margin: 1rem 0;
+    }
+
+    .form-group {
+        width: 27rem;
+
+    }
+
+    .form-control {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        font-family: $fuentePrincipal;
+    }
+
+    .area {
+        max-height: 15rem;
+        min-height: 5rem;
+    }
+
+    .content-btn {
+        display: inline-block;
+    }
+
+    .contac-btn {
+        width: 27rem;
+    }
+
+    /* Form con bootstrap Fin */
+
+    /* .textarea__area {
+        margin-bottom: 3rem;
+        min-width: 37rem;
+        max-width: 37rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    } */
+
+    .section__table {
+        width: 30rem;
+    }
+
+    .section__titulo {
+        font-size: 2rem;
+    }
+
+    th,
+    td {
+        padding: 0.26rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .info {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    /* Fin page Contacto 576px */
+    /* -------------------------------------------------------------- */
+    /* Inicio page Reserva 576px */
+
+    .form__details {
+        font-size: 1.5rem;
+    }
+
+    .form__lugar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    .productos__titulo h3 {
+        text-align: center;
+    }
+
+    .reservas__visit {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .visit__label {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .visit__label,
+    .visit__input {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    .div__productos {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    .div__productos input {
+        margin: 1rem;
+    }
+
+    .div__comentarios {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .area__textarea {
+        margin-bottom: 3rem;
+        min-width: 37rem;
+        max-width: 37rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+
+    .div__bottons {
+        margin-bottom: 3rem;
+    }
+
+    /* Fin page Reserva 576px*/
+}
