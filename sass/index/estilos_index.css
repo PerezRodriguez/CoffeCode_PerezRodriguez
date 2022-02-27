@@ -1,0 +1,2108 @@
+/*Colores Globlales */
+/* GLOBALES */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* Esto es igual a 1rem=10px */
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* Esto es igual a 1rem=10px */
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  /* background-image:$grisClaro; */
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.titulo-h1 {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+
+.sombra {
+  -webkit-box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+  box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+
+.divcontenedor {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+/* Fin de Globales */
+/* ------------------------------------------------------------------------------------------------------ */
+/* PRUEBA DE GRID AREA */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, auto); */
+      grid-template-areas: "header " "main " "footer";
+}
+
+/* Estilos para la barra de navegacion y la imagen de fondo */
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../img/main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ESTILOS NAVBAR CON BOOTSTRAP */
+/* Estilos para poder quitar el bg y hacerlo transparente */
+.navbar-brand {
+  background: #212121;
+  border-radius: 1rem;
+}
+
+.bg-dark {
+  background: rgba(255, 255, 255, 0.6) !important;
+  z-index: 20;
+  margin-top: 0;
+}
+
+@media (min-width: 769px) {
+  .bg-dark {
+    background-color: transparent !important;
+  }
+  .nav-link {
+    color: #FFFFFF !important;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+  }
+  .navbar-brand {
+    background: transparent;
+    border-radius: 2rem;
+  }
+  .bg-dark {
+    margin-top: 3rem;
+  }
+}
+
+/* Estilos para poder quitar el bg y hacerlo transparente */
+.logo {
+  width: 95px;
+  cursor: pointer;
+}
+
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-link {
+  color: #212121;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  background-image: none;
+  color: #FFFFFF;
+}
+
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.active {
+  color: #e70000 !important;
+  text-transform: uppercase;
+}
+
+.nav-item::before {
+  content: "";
+  height: 5px;
+  width: 0;
+  background: #e70000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+/* ESTILOS NAVBAR CON BOOTSTRAP FIN */
+/* Estilos para posicionar los textos al centro de la imagen */
+.div__hero {
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__titulo {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+.titulo__h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12rem;
+  color: #FFFFFF;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+.titulo__hero--span {
+  color: #FFFFFF;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* Fin Estilos para posicionar los textos al centro de la imagen */
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Inicio estilos Nuestro Cafe */
+.section__nuestro {
+  grid-area: nuestro;
+  min-height: 30rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nuestro__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem;
+  width: 40%;
+}
+
+.nuestro__parrafo {
+  margin: 3.5rem 0;
+  padding: 1rem 0;
+}
+
+.nuestro__img {
+  margin: 1rem;
+  width: 60%;
+}
+
+.nuestro__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Fin nosotros */
+/* Galeria */
+.carousel-inner {
+  width: 100rem;
+  height: 50rem;
+}
+
+.carousel-item img {
+  width: 100rem;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Encuentranos */
+.section__encuentranos {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.encuentranos__tabla {
+  margin-bottom: 3rem;
+}
+
+.encuentranos__maps {
+  text-align: center;
+  padding: 1rem;
+}
+
+.encuentranos__h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+table tr th,
+td {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+iframe {
+  width: 65rem;
+  height: 30rem;
+}
+
+/* Fin encuentranos */
+/* Footer */
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: #ebf1f7;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  color: #212121;
+}
+
+.info {
+  margin: 1rem 0;
+  padding: 1rem;
+  list-style: none;
+}
+
+.info ul h4 a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #212121;
+}
+
+.info ul li a {
+  color: #757575;
+  font-weight: 400;
+}
+
+.sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sociales ul li {
+  color: #757575;
+  display: inline-block;
+}
+
+.sociales ul li a i {
+  margin: 2.5rem;
+  font-size: 4rem;
+  color: #212121;
+}
+
+.sociales ul li a i:hover {
+  font-size: 4rem;
+  color: #757575;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer p {
+  color: #757575;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Fin footer */
+/* Inicio boton subir */
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: #ebf1f7;
+  border: 2px solid #212121;
+  position: fixed;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  opacity: .5;
+}
+
+.subir i {
+  color: #212121;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.subir i:hover {
+  color: #FFFFFF;
+}
+
+.subir:hover {
+  background-color: #212121;
+}
+
+/* Fin Boton subir */
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERYS*/
+/* Desktops 1200px or up */
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Desktops 992px or up */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  .grid-container {
+        grid-template-areas: "header" "main " "footer";
+  }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(img/main.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+/* Medium Tablets, 768 or up */
+@media (max-width: 768px) and (min-width: 601px) {
+  body {
+    font-size: 14px;
+  }
+  .grid-container {
+        grid-template-areas: "header" "main " "footer";
+  }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../img/main.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  /* Menu Hamburguesa Inicio */
+  /* Menu Hamburguesa Fin */
+  /* .nav-bar {
+        width: 90%;
+        margin: auto;
+        padding: 35px 0;
+        display: wrap;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .nav-bar ul li {
+        margin-top: 2rem;
+    } */
+  /* Nuestro cafe */
+  .section__nuestro {
+    grid-area: nuestro;
+    min-height: 30rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nuestro__texto {
+    width: 70%;
+  }
+  .section__nuestro p {
+    margin: 0.5rem;
+    text-align: justify;
+  }
+  .nuestro__img {
+    margin-top: 0.5rem;
+    height: 25rem;
+    width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /* ------------------------------------- */
+  /* Galeria */
+  .section__galeria {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .galeria__item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .galeria__item img {
+    width: 100%;
+  }
+  .galeria__item p {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  /* Carrusel index */
+  .carousel-inner {
+    width: 45rem;
+    height: 25rem;
+  }
+  .carousel-item img {
+    width: 60rem;
+    height: 25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+/* Small phones, 576px  */
+@media (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../img/main.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .grid-container {
+        grid-template-areas: "header" "main " "footer";
+  }
+  .logo {
+    width: 7.5rem;
+    cursor: pointer;
+  }
+  .div__hero {
+    margin-top: 0;
+  }
+  .nav {
+    margin-bottom: 0;
+  }
+  .nav-link {
+    font-size: 2.5rem;
+  }
+  .titulo__h3 {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .titulo__span {
+    font-size: 3rem;
+    text-align: center;
+  }
+  /* Nuestro cafe */
+  .section__nuestro {
+    grid-area: nuestro;
+    min-height: 20rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nuestro__texto {
+    width: 70%;
+  }
+  .section__nuestro p {
+    margin: 0.5rem;
+    text-align: justify;
+  }
+  .nuestro__img {
+    margin-top: 0.5rem;
+    height: 25rem;
+    width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /* Carrusel Inicio */
+  .carousel-inner {
+    width: 40rem;
+    height: 25rem;
+  }
+  .carousel-item img {
+    width: 40rem;
+    height: 25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /* Carrusel Fin */
+  /* Encuentranos inicio*/
+  .section__encuentranos {
+    width: 40rem;
+  }
+  .tabla__horarios {
+    width: auto;
+  }
+  .encuentranos__maps iframe {
+    width: 30rem;
+    height: 15rem;
+  }
+  /* Encuentranos Fin*/
+}
+
+/* Estilos para la barra de navegacion y la imagen de fondo */
+.header__pages {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../../img/main.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../img/main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+/* ESTILOS NAVBAR CON BOOTSTRAP */
+/* Estilos para poder quitar el bg y hacerlo transparente */
+.bg-dark {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  background: #212121;
+  border-radius: 2rem;
+}
+
+.bg-dark {
+  background: rgba(255, 255, 255, 0.6) !important;
+  z-index: 20;
+}
+
+@media (min-width: 769px) {
+  .bg-dark {
+    background-color: transparent !important;
+  }
+  .nav-link {
+    color: #FFFFFF !important;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+  }
+  .navbar-brand {
+    background: transparent;
+    border-radius: 2rem;
+  }
+  .bg-dark {
+    margin-top: 3rem;
+  }
+}
+
+/* Estilos para poder quitar el bg y hacerlo transparente */
+.logo {
+  width: 95px;
+  cursor: pointer;
+}
+
+.nav {
+  width: auto;
+  margin: auto;
+  padding: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-link {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  background-image: none;
+  color: #fff;
+}
+
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.active {
+  color: #e70000 !important;
+  text-transform: uppercase;
+}
+
+.nav-item::before {
+  content: "";
+  height: 5px;
+  width: 0;
+  background: #e70000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+/* ESTILOS NAVBAR CON BOOTSTRAP FIN */
+/* ------------------------------------------------------------------------ */
+/* Estilos para posicionar los textos al centro de la imagen */
+.contenido-hero {
+  height: 50%;
+  /* width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+  text-align: center;
+}
+
+.hero-titulo-h3 {
+  color: #FFFFFF;
+  font-size: 6rem;
+  padding: 1rem;
+}
+
+.hero-span {
+  font-family: "Roboto", sans-serif;
+  font-size: 10rem;
+  color: #FFFFFF;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+/* Fin Estilos para posicionar los textos al centro de la imagen */
+/* ------------------------------------------------------------------------ */
+/* Footer */
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 2rem;
+  background-color: #ebf1f7;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  color: #212121;
+}
+
+.info {
+  padding: 1rem;
+  list-style: none;
+}
+
+.info ul h4 a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #212121;
+}
+
+.info ul li a {
+  color: #757575;
+  font-weight: 400;
+}
+
+.sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sociales ul li {
+  color: #757575;
+  display: inline-block;
+}
+
+.sociales ul li a i {
+  margin: 2.5rem;
+  font-size: 4rem;
+  color: #212121;
+}
+
+.sociales ul li a i:hover {
+  font-size: 4rem;
+  color: #757575;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer p {
+  color: #757575;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Fin footer */
+/* Inicio boton subbir */
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: #ebf1f7;
+  border: 2px solid #212121;
+  position: fixed;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  opacity: .5;
+}
+
+.subir i {
+  color: #212121;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.subir i:hover {
+  color: #FFFFFF;
+}
+
+.subir:hover {
+  background-color: #212121;
+}
+
+/* Fin Boton subir */
+/* inicio Menu*/
+/* .section__galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.section__contenedor {
+  display: -ms-grid;
+  display: grid;
+  max-width: 120rem;
+  /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; */
+  margin: 2rem 0;
+  grid-area: galeria;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+}
+
+.div__item {
+  position: relative;
+  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.galeria__img {
+  width: 30rem;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+/* Inicio Animaciones a las imagenes */
+.item__capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 77.5%;
+  color: #FFFFFF;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 1.35rem;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.div__item:hover > .item__capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.div__item:hover > .item__capa h3 {
+  margin-top: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.item__capa h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12rem;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  margin-top: 3rem;
+}
+
+.item__capa p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 22rem;
+  margin: auto;
+}
+
+/* Fin Animaciones a las imagenes */
+.div__item img {
+  border-radius: 2rem;
+}
+
+.custom-btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#283048), color-stop(51%, #859398), to(#283048));
+  background-image: linear-gradient(to right, #283048 0%, #859398 51%, #283048 100%);
+}
+
+.custom-btn {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.content-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+/* Fin Menu */
+/* ------------------------------------------------------------------------ */
+/* Inicio PAGE Nosotros */
+.section__nosotros {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "texto-cafe video" "img        texto-granos" "fin__img   fin__img";
+}
+
+.nosotros__media video {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: video;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nosotros__img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+  background-image: url(../../img/nosotros/granos-nosotros.jpg);
+  width: 100%;
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nosotros__texto--granos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: texto-granos;
+  width: 100%;
+  height: 40rem;
+}
+
+.nosotros__texto--cafe {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: texto-cafe;
+  width: 100%;
+  height: 40rem;
+}
+
+.nosotros__texto--cafe,
+.nosotros__texto--granos {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__nosotros--finimg {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: fin__img;
+  width: 100%;
+  min-height: 60rem;
+  background-image: url(../../img/nosotros/finNosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1rem;
+}
+
+/* Fin Nosotros */
+/* inicio contacto */
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+/* Form con bootstrap inicio */
+.row {
+  width: 85rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col {
+  width: 75%;
+  margin: 1rem 0;
+}
+
+.form-group {
+  width: 81.5%;
+  font-size: 2rem;
+}
+
+.form-control {
+  text-align: center;
+  font-size: 2rem;
+  padding: .5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.area {
+  max-height: 15rem;
+  min-height: 5rem;
+}
+
+.contac-btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#44A08D), color-stop(51%, #093637), to(#44A08D));
+  background-image: linear-gradient(to right, #44A08D 0%, #093637 51%, #44A08D 100%);
+}
+
+.contac-btn {
+  margin: 0 4rem 3rem;
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.contac-btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.section__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+.section__titulo {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+/* Fin contacto */
+/* --------------------------------------------------------------------------------------------------- */
+/* Inicio Reservas */
+.reserva__titulo {
+  text-align: center;
+}
+
+.titulo__span {
+  color: #212121;
+  font-size: 2rem;
+}
+
+.form__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.form__lugar label {
+  margin: 3rem;
+}
+
+.form__lugar select {
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.form__lugar option {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.form__mayor {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mayor__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.radio__si {
+  margin-right: 3rem;
+}
+
+.radio__no label,
+.radio__si label {
+  margin: 1rem;
+}
+
+.radio__no:hover,
+.radio__si:hover {
+  border-bottom: 0.2rem solid #212121;
+}
+
+.reservas__visit {
+  margin: 3rem 0;
+}
+
+.visit__input,
+.visit__label {
+  margin-right: 3rem;
+}
+
+.productos__titulo {
+  margin-bottom: 2rem;
+}
+
+.productos__titulo h3 {
+  text-transform: capitalize;
+}
+
+.productos__item {
+  margin: 0 2rem;
+}
+
+.div__productos input {
+  margin: 1rem;
+}
+
+.div__comentarios {
+  margin: 2rem;
+}
+
+.comentarios__select {
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 3rem;
+}
+
+.div__comentarios option {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.area__textarea {
+  margin-bottom: 2rem;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 10rem;
+  max-height: 10rem;
+}
+
+/* .div__bottons input {
+    margin: 2rem;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: 0.1rem solid$gris;
+}
+
+.div__bottons input:hover {
+    background-color:$gris;
+    color:$blanco;
+} */
+/* Fin Reservas */
+/* --------------------------------------------------------------------------------------------------- */
+/* Desktops 1200px or up */
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+  /* Inicio  Page Menu 1200px o superior */
+  .section__contenedor {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 15rem;
+  }
+  /* Fin Page Menu 1200px o superior */
+  /* inicio page nosotros 1200px o superior */
+  .section__nosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 'texto-cafe video' 'img        texto-granos' 'fin__img   fin__img';
+  }
+  .nosotros__img {
+    height: 30rem;
+  }
+  .nosotros__texto--granos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: texto-granos;
+    width: 100%;
+    height: 30rem;
+  }
+  .nosotros__texto--cafe {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: texto-cafe;
+    width: 100%;
+    height: 30rem;
+  }
+  .section__nosotros--finimg {
+    min-height: 30rem;
+  }
+  /* inicio page nosotros 1200px o superior */
+  /* ----------------------------------------------------- */
+  /* Inicio page Contacto 1200px */
+  .main__title {
+    width: 80%;
+    text-align: center;
+  }
+  .main__title span {
+    font-size: 14px;
+  }
+  .section__titulo {
+    text-align: center;
+  }
+  th,
+  td {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  /* Fin page Contacto 1200px */
+  /* ----------------------------------------------------- */
+  /* Inicio page Reserva */
+  /* Fin page Reserva */
+}
+
+/* Desktops 992px or up */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  .grid-container {
+        grid-template-areas: "header" "main " "footer";
+  }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../img/main.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  /* Inicio  Page Menu 992px o superior */
+  .section__contenedor {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+  }
+  /* Fin Page Menu 768px o superior */
+  /* inicio page nosotros 992px o superior */
+  .section__nosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+  }
+  /* Fin page nosotros 993px */
+  /* ----------------------------------------------------- */
+  /* Inicio page Contacto 992px */
+  .main__title {
+    width: 80%;
+    text-align: center;
+  }
+  .main__title span {
+    font-size: 14px;
+  }
+  .section__titulo {
+    text-align: center;
+  }
+  th,
+  td {
+    padding: 1rem;
+    text-align: center;
+  }
+  /* Fin page Contacto 992px */
+  /* ----------------------------------------------------- */
+  /* Inicio page Reserva 992px */
+  /* Fin page Reserva 992px*/
+}
+
+/* Medium Tablets, 768 or up */
+@media (max-width: 768px) and (min-width: 601px) {
+  body {
+    font-size: 14px;
+  }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../img/main.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  }
+  .nav-bar {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav-bar ul li {
+    margin-top: 2rem;
+  }
+  /* Inicio  Page Menu 768px o superior */
+  .section__contenedor {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .hero-titulo-h3,
+  .contenido-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .div__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* Fin Page Menu 768px o superior */
+  /* ----------------------------------------------------- */
+  /* inicio page nosotros 768px o superior */
+  .section__nosotros {
+    width: 100%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+  }
+  .nosotros__media video {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: video;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nosotros__img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: img;
+    background-image: url(img/nosotros/granos-nosotros.jpg);
+    width: 100%;
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .nosotros__texto--granos {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: texto-granos;
+    width: 100%;
+    height: 40rem;
+  }
+  .nosotros__texto--cafe {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: texto-cafe;
+    width: 100%;
+    height: 40rem;
+  }
+  .nosotros__texto--cafe,
+  .nosotros__texto--granos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section__nosotros--finimg {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: fin__img;
+    width: 100%;
+    min-height: 40rem;
+    background-image: url(img/nosotros/finNosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1rem;
+  }
+  /* Fin page nosotros 768px o superior */
+  /* -------------------------------------------------------------- */
+  /* Inicio page Contacto 768px */
+  .main__title {
+    width: 80%;
+    text-align: center;
+  }
+  .main__title span {
+    font-size: 14px;
+  }
+  /* Form con bootstrap inicio */
+  .row {
+    border: 2px solid blue;
+    width: 55rem;
+  }
+  .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45rem;
+    margin: 1rem 0;
+  }
+  .form-group {
+    width: 43rem;
+  }
+  .form-control {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .area {
+    max-height: 15rem;
+    min-height: 5rem;
+  }
+  .content-btn {
+    display: inline-block;
+  }
+  .contac-btn {
+    width: 43rem;
+  }
+  /* Form con bootstrap Fin */
+  /* .textarea__area {
+        margin-bottom: 3rem;
+        min-width: 50rem;
+        max-width: 50rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    } */
+  th,
+  td {
+    padding: 1rem;
+    text-align: center;
+  }
+  /* Fin page Contacto 768px */
+  /* -------------------------------------------------------------- */
+  /* Inicio page Reserva 768px */
+  .form__lugar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 3rem;
+  }
+  .productos__titulo h3 {
+    text-align: center;
+  }
+  .reservas__visit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visit__label {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .visit__label,
+  .visit__input {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .div__productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3rem 0;
+  }
+  .div__productos input {
+    margin: 1rem;
+  }
+  .div__comentarios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+  }
+  .area__textarea {
+    margin-bottom: 3rem;
+    min-width: 50rem;
+    max-width: 50rem;
+    min-height: 20rem;
+    max-height: 20rem;
+  }
+  .div__bottons {
+    margin-bottom: 3rem;
+  }
+  /* Fin page Reserva 768px*/
+}
+
+/* Small phones, 576px  */
+@media (max-width: 576px) and (min-width: 0px) {
+  body {
+    font-size: 12px;
+  }
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../img/main.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+  }
+  .hero-titulo-h3,
+  .contenido-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 5rem;
+  }
+  .hero-span {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .logo {
+    width: 7.5rem;
+    cursor: pointer;
+  }
+  .div__hero {
+    margin-top: 0;
+  }
+  .justify-content-center,
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .nav-link {
+    display: inline-block;
+    font-size: 0.5rem;
+  }
+  /* -------------------------------------------------------------- */
+  /* Page Menu 576px*/
+  .section__contenedor {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  /* Inicio Animaciones a las imagenes */
+  .div__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* Fin Animaciones a las imagenes */
+  /* Fin Page Menu 576px */
+  /* -------------------------------------------------------------- */
+  /* Inicio Page nosotro 576px */
+  .section__nosotros {
+        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+  }
+  .logo {
+    width: 7.5rem;
+    cursor: pointer;
+  }
+  .div__hero {
+    margin-top: 0;
+  }
+  .justify-content-center,
+  .nav {
+    margin: 0;
+  }
+  .nav-link {
+    font-size: 2.5rem;
+  }
+  .nosotros__img {
+    height: 30rem;
+  }
+  .nosotros__texto--granos {
+    height: 30rem;
+  }
+  .nosotros__texto--cafe {
+    height: 30rem;
+  }
+  .section__nosotros--finimg {
+    min-height: 30rem;
+  }
+  /* Fin Page nosotros 576px*/
+  /* -------------------------------------------------------------- */
+  /* Inicio page Contacto 576px */
+  .main__title {
+    width: 80%;
+    text-align: center;
+  }
+  .main__title span {
+    font-size: 14px;
+  }
+  .logo {
+    width: 7.5rem;
+    cursor: pointer;
+  }
+  .div__hero {
+    margin-top: 0;
+  }
+  .justify-content-center,
+  .nav {
+    margin: 0;
+  }
+  .nav-link {
+    font-size: 2.5rem;
+  }
+  .section__titulo {
+    text-align: center;
+  }
+  /* Form con bootstrap inicio */
+  .row {
+    width: 35rem;
+  }
+  .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30rem;
+    margin: 1rem 0;
+  }
+  .form-group {
+    width: 27rem;
+  }
+  .form-control {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .area {
+    max-height: 15rem;
+    min-height: 5rem;
+  }
+  .content-btn {
+    display: inline-block;
+  }
+  .contac-btn {
+    width: 27rem;
+  }
+  /* Form con bootstrap Fin */
+  /* .textarea__area {
+        margin-bottom: 3rem;
+        min-width: 37rem;
+        max-width: 37rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    } */
+  .section__table {
+    width: 30rem;
+  }
+  .section__titulo {
+    font-size: 2rem;
+  }
+  th,
+  td {
+    padding: 0.26rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .info {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  /* Fin page Contacto 576px */
+  /* -------------------------------------------------------------- */
+  /* Inicio page Reserva 576px */
+  .form__details {
+    font-size: 1.5rem;
+  }
+  .form__lugar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 3rem;
+  }
+  .productos__titulo h3 {
+    text-align: center;
+  }
+  .reservas__visit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visit__label {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .visit__label,
+  .visit__input {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .div__productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3rem 0;
+  }
+  .div__productos input {
+    margin: 1rem;
+  }
+  .div__comentarios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+  }
+  .area__textarea {
+    margin-bottom: 3rem;
+    min-width: 37rem;
+    max-width: 37rem;
+    min-height: 20rem;
+    max-height: 20rem;
+  }
+  .div__bottons {
+    margin-bottom: 3rem;
+  }
+  /* Fin page Reserva 576px*/
+}
+/*# sourceMappingURL=estilos_index.css.map */

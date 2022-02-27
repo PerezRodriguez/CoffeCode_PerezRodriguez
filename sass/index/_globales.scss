@@ -1,0 +1,66 @@
+/* GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    /* Esto es igual a 1rem=10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* Esto es igual a 1rem=10px */
+    font-size: 16px;
+    font-family: $fuentePrincipal;
+    /* background-image:$grisClaro; */
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fuentePrincipal;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+
+.titulo-h1 {
+    font-family: $fuentePrincipal;
+    color:$blanco;
+}
+
+.sombra {
+    -webkit-box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+    box-shadow: 13px 10px 30px -3px rgba(0, 0, 0, 0.45);
+    background-color:$blanco;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.divcontenedor {
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+/* Fin de Globales */
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* PRUEBA DE GRID AREA */
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, auto); */
+    grid-template-areas:
+        "header "
+        "main "
+        "footer"
+}

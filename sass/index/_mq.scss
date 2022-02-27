@@ -1,0 +1,255 @@
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERYS*/
+
+/* Desktops 1200px or up */
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Desktops 992px or up */
+@media (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main "
+            "footer";
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh
+    }
+}
+
+/* Medium Tablets, 768 or up */
+@media (max-width: 768px) and (min-width: 601px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main "
+            "footer";
+    }
+
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh
+    }
+
+    /* Menu Hamburguesa Inicio */
+    
+    
+    /* Menu Hamburguesa Fin */
+
+    /* .nav-bar {
+        width: 90%;
+        margin: auto;
+        padding: 35px 0;
+        display: wrap;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .nav-bar ul li {
+        margin-top: 2rem;
+    } */
+
+    /* Nuestro cafe */
+    .section__nuestro {
+        grid-area: nuestro;
+        min-height: 30rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nuestro__texto {
+        width: 70%;
+    }
+
+    .section__nuestro p {
+        margin: 0.5rem;
+        text-align: justify;
+    }
+
+    .nuestro__img {
+        margin-top: 0.5rem;
+        height: 25rem;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    /* ------------------------------------- */
+
+    /* Galeria */
+    .section__galeria {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .galeria__item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .galeria__item img {
+        width: 100%;
+
+    }
+
+    .galeria__item p {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Carrusel index */
+    .carousel-inner {
+        width: 45rem;
+        height: 25rem;
+    }
+
+    .carousel-item img {
+        width: 60rem;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+}
+
+/* Small phones, 576px  */
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    .header {
+        grid-area: header;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main "
+            "footer";
+    }
+
+    .logo {
+        width: 7.5rem;
+        cursor: pointer;
+    }
+
+
+    .div__hero {
+        margin-top: 0;
+    }
+
+    .nav{
+        margin-bottom: 0;
+    }
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .titulo__h3 {
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    .titulo__span {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /* Nuestro cafe */
+    .section__nuestro {
+        grid-area: nuestro;
+        min-height: 20rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nuestro__texto {
+        width: 70%;
+    }
+
+    .section__nuestro p {
+        margin: 0.5rem;
+        text-align: justify;
+    }
+
+    .nuestro__img {
+        margin-top: 0.5rem;
+        height: 25rem;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    
+    /* Carrusel Inicio */
+    
+    .carousel-inner {
+        width: 40rem;
+        height: 25rem;
+    }
+    
+    .carousel-item img {
+        width: 40rem;
+        height: 25rem;
+        object-fit: cover;
+    }
+     /* Carrusel Fin */
+
+    /* Encuentranos inicio*/
+    .section__encuentranos{
+        width: 40rem;
+    }
+        .tabla__horarios {
+            width: auto;
+        }
+
+        .encuentranos__maps iframe {
+            width: 30rem;
+            height: 15rem;
+        }
+        /* Encuentranos Fin*/
+    
+    
+}

@@ -1,0 +1,109 @@
+
+
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    background-color:$grisClaro;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    color:$oscuro;
+}
+
+.info {
+
+    padding: 1rem;
+    list-style: none;
+}
+
+.info ul h4 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color:$oscuro;
+}
+
+.info ul li a {
+    color:$gris;
+    font-weight: 400;
+}
+
+.sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sociales ul li {
+    color:$gris;
+    display: inline-block;
+}
+
+.sociales ul li a i {
+    margin: 2.5rem;
+    font-size: 4rem;
+    color:$oscuro;
+}
+
+.sociales ul li a i:hover {
+    font-size: 4rem;
+    color:$gris;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li a {
+    font-family: $fuentePrincipal;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.footer p {
+    color:$gris;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: $fuentePrincipal;
+}
+
+/* Fin footer */
+
+
+/* Inicio boton subbir */
+.subir {
+    height: 50px;
+    width: 50px;
+    background-color:$grisClaro;
+    border: 2px solid$oscuro;
+    position: fixed;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    opacity: .5;
+}
+
+.subir i {
+    color:$oscuro;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.subir i:hover {
+    color:$blanco;
+}
+
+.subir:hover {
+    background-color:$oscuro;
+}
+
+/* Fin Boton subir */

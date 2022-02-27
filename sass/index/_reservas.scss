@@ -1,0 +1,130 @@
+
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Inicio Reservas */
+
+.reserva__titulo {
+    text-align: center;
+}
+
+.titulo__span{
+    color: $oscuro;
+    font-size: 2rem;
+}
+
+.form__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuentePrincipal;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form__lugar label {
+    margin: 3rem;
+}
+
+.form__lugar select {
+    padding: 0.5rem;
+    font-family: $fuentePrincipal;
+}
+
+.form__lugar option {
+    font-family: $fuentePrincipal;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.form__mayor {
+    flex-direction: column;
+}
+
+.mayor__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.radio__si {
+    margin-right: 3rem;
+}
+
+.radio__no label,
+.radio__si label {
+    margin: 1rem;
+}
+
+.radio__no:hover,
+.radio__si:hover {
+    border-bottom: 0.2rem solid$oscuro;
+}
+
+.reservas__visit {
+    margin: 3rem 0;
+}
+
+.visit__input,
+.visit__label {
+    margin-right: 3rem;
+}
+
+.productos__titulo {
+    margin-bottom: 2rem;
+}
+
+.productos__titulo h3 {
+    text-transform: capitalize;
+}
+
+.productos__item {
+    margin: 0 2rem;
+
+}
+
+.div__productos input {
+    margin: 1rem;
+}
+
+.div__comentarios {
+    margin: 2rem;
+}
+
+.comentarios__select {
+    padding: 0.5rem;
+    font-family: $fuentePrincipal;
+    margin: 3rem;
+}
+
+.div__comentarios option {
+    font-family: $fuentePrincipal;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.area__textarea {
+    margin-bottom: 2rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 10rem;
+    max-height: 10rem;
+}
+
+/* .div__bottons input {
+    margin: 2rem;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: 0.1rem solid$gris;
+}
+
+.div__bottons input:hover {
+    background-color:$gris;
+    color:$blanco;
+} */
+
+/* Fin Reservas */
+/* --------------------------------------------------------------------------------------------------- */
