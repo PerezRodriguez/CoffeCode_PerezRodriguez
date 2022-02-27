@@ -1498,7 +1498,7 @@ td {
   .grid-container {
         grid-template-areas: "header" "main " "footer";
   }
-  .header {
+  .header__pages {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
@@ -1508,7 +1508,7 @@ td {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
   }
   /* Inicio  Page Menu 992px o superior */
   .section__contenedor {
@@ -1554,7 +1554,7 @@ td {
   body {
     font-size: 14px;
   }
-  .header {
+  .header__pages {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
@@ -1830,7 +1830,7 @@ td {
   body {
     font-size: 12px;
   }
-  .header {
+  .header__pages {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;

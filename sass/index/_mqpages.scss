@@ -94,14 +94,14 @@
             "footer";
     }
 
-    .header {
+    .header__pages {
         grid-area: header;
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh
+        height: 80vh
     }
 
     /* Inicio  Page Menu 992px o superior */
@@ -164,7 +164,7 @@
         font-size: 14px;
     }
 
-    .header {
+    .header__pages {
         grid-area: header;
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
@@ -421,7 +421,7 @@
         font-size: 12px;
     }
 
-    .header {
+    .header__pages {
         grid-area: header;
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../img/main.jpg);
