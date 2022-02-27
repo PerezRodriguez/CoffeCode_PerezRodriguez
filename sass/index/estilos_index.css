@@ -191,7 +191,7 @@ h2 {
   padding: 1rem;
 }
 
-.titulo__span {
+.titulo__hero--span {
   color: #FFFFFF;
   margin: 2rem;
   padding: 1rem;
@@ -687,7 +687,7 @@ ul li a {
 }
 
 /* Estilos para la barra de navegacion y la imagen de fondo */
-.header {
+.header__pages {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
@@ -696,7 +696,7 @@ ul li a {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 }
 
 /* ESTILOS NAVBAR CON BOOTSTRAP */
@@ -1102,7 +1102,7 @@ ul li a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: img;
-  background-image: url(img/nosotros/granos-nosotros.jpg);
+  background-image: url(../../img/nosotros/granos-nosotros.jpg);
   width: 100%;
   height: 40rem;
   background-position: center;
@@ -1152,7 +1152,7 @@ ul li a {
   grid-area: fin__img;
   width: 100%;
   min-height: 60rem;
-  background-image: url(img/nosotros/finNosotros.jpg);
+  background-image: url(../../img/nosotros/finNosotros.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1288,6 +1288,11 @@ td {
 /* Inicio Reservas */
 .reserva__titulo {
   text-align: center;
+}
+
+.titulo__span {
+  color: #212121;
+  font-size: 2rem;
 }
 
 .form__details {
