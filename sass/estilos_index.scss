@@ -1,0 +1,24 @@
+// Globales
+@import 'globales/colores';
+@import 'global/globales';
+
+
+// Index
+@import 'index/headerIndex';
+@import 'index/main';
+@import 'index/footer';
+@import 'index/mq';
+
+
+
+
+// imports pages
+@import 'pages/headerPages';
+@import 'pages/footerPages';
+@import 'pages/menu';
+@import 'pages/nosotros';
+@import 'pages/contacto';
+@import 'pages/reservas';
+@import 'pages/mqpages';
+@import 'global/imgGalery';
+

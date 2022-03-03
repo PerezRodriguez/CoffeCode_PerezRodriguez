@@ -1,0 +1,6 @@
+.galery__item{
+    @extend .div__item;
+    >img{
+        @extend .galeria__img;
+    }
+}

@@ -967,14 +967,14 @@ ul li a {
   gap: 10rem;
 }
 
-.div__item {
+.div__item, .galery__item {
   position: relative;
   margin: 1rem;
   border-radius: 1rem;
   overflow: hidden;
 }
 
-.galeria__img {
+.galeria__img, .galery__item > img {
   width: 30rem;
   height: 30rem;
   -o-object-fit: cover;
@@ -1000,12 +1000,12 @@ ul li a {
   cursor: pointer;
 }
 
-.div__item:hover > .item__capa {
+.div__item:hover > .item__capa, .galery__item:hover > .item__capa {
   opacity: 1;
   visibility: visible;
 }
 
-.div__item:hover > .item__capa h3 {
+.div__item:hover > .item__capa h3, .galery__item:hover > .item__capa h3 {
   margin-top: 10rem;
   margin-bottom: 1.5rem;
 }
@@ -1028,7 +1028,7 @@ ul li a {
 }
 
 /* Fin Animaciones a las imagenes */
-.div__item img {
+.div__item img, .galery__item img {
   border-radius: 2rem;
 }
 
@@ -1599,7 +1599,7 @@ td {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .div__item {
+  .div__item, .galery__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1890,7 +1890,7 @@ td {
         grid-template-columns: 1fr;
   }
   /* Inicio Animaciones a las imagenes */
-  .div__item {
+  .div__item, .galery__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
