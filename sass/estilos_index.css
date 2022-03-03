@@ -1132,13 +1132,13 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1168,16 +1168,16 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main__title {
@@ -1191,16 +1191,16 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .col {
@@ -1256,16 +1256,16 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-transform: capitalize;
   margin: 3rem;
   padding: 1rem;
@@ -1284,8 +1284,6 @@ td {
 }
 
 /* Fin contacto */
-/* --------------------------------------------------------------------------------------------------- */
-/* Inicio Reservas */
 .reserva__titulo {
   text-align: center;
 }
@@ -1409,19 +1407,6 @@ td {
   max-height: 10rem;
 }
 
-/* .div__bottons input {
-    margin: 2rem;
-    font-size: 1.5rem;
-    padding: 0.7rem;
-    border-radius: 1rem;
-    font-weight: 700;
-    border: 0.1rem solid$gris;
-}
-
-.div__bottons input:hover {
-    background-color:$gris;
-    color:$blanco;
-} */
 /* Fin Reservas */
 /* --------------------------------------------------------------------------------------------------- */
 /* Desktops 1200px or up */

@@ -2,10 +2,11 @@
 
 .main {
     grid-area: main;
-    display: flex;
+    @include display;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .main__title {
@@ -16,10 +17,11 @@
 /* Form con bootstrap inicio */
 .row {
     width: 85rem;
-    display: flex;
+    @include display;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .col {
@@ -71,10 +73,11 @@
 }
 
 .section__table {
-    display: flex;
+    @include display;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-transform: capitalize;
     margin: 3rem;
     padding: 1rem;

@@ -1,21 +1,15 @@
 
-
-/* --------------------------------------------------------------------------------------------------- */
-/* Inicio Reservas */
-
 .reserva__titulo {
     text-align: center;
 }
 
-.titulo__span{
+.titulo__span {
     color: $oscuro;
     font-size: 2rem;
 }
 
 .form__details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display;
     font-family: $fuentePrincipal;
     font-size: 2rem;
     font-weight: 400;
@@ -41,9 +35,7 @@
 }
 
 .mayor__radio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display;
     margin: 2rem;
     padding: 1rem;
 }
@@ -111,20 +103,6 @@
     min-height: 10rem;
     max-height: 10rem;
 }
-
-/* .div__bottons input {
-    margin: 2rem;
-    font-size: 1.5rem;
-    padding: 0.7rem;
-    border-radius: 1rem;
-    font-weight: 700;
-    border: 0.1rem solid$gris;
-}
-
-.div__bottons input:hover {
-    background-color:$gris;
-    color:$blanco;
-} */
 
 /* Fin Reservas */
 /* --------------------------------------------------------------------------------------------------- */
