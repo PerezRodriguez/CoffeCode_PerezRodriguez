@@ -1,20 +1,9 @@
-/* inicio Menu*/
-/* .section__galeria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 .section__contenedor {
     display: grid;
     max-width: 120rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; */
     margin: 2rem 0;
-
     grid-area: galeria;
     grid-template-columns: repeat(3, 1fr);
     gap: 10rem;
@@ -112,12 +101,7 @@
 
 .content-btn {
     @include display;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     margin: 1rem 0;
 }
-
-
 
 /* Fin Menu */

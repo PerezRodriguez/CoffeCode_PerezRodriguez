@@ -3,9 +3,6 @@
 .main {
     grid-area: main;
     @include display;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     flex-direction: column;
 }
 
@@ -18,9 +15,6 @@
 .row {
     width: 85rem;
     @include display;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     flex-direction: column;
 }
 
@@ -74,9 +68,6 @@
 
 .section__table {
     @include display;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     flex-direction: column;
     text-transform: capitalize;
     margin: 3rem;
