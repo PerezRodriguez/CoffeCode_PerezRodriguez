@@ -12,6 +12,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          scroll-behavior: smooth;
 }
 
 body {
@@ -56,7 +57,9 @@ h2 {
   display: grid;
   /* grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, auto); */
-      grid-template-areas: "header " "main " "footer";
+      grid-template-areas: "header "
+ "main "
+ "footer";
 }
 
 /* Estilos para la barra de navegacion y la imagen de fondo */
@@ -459,7 +462,9 @@ ul li a {
     font-size: 16px;
   }
   .grid-container {
-        grid-template-areas: "header" "main " "footer";
+        grid-template-areas: "header"
+ "main "
+ "footer";
   }
   .header {
     -ms-grid-row: 1;
@@ -481,7 +486,9 @@ ul li a {
     font-size: 14px;
   }
   .grid-container {
-        grid-template-areas: "header" "main " "footer";
+        grid-template-areas: "header"
+ "main "
+ "footer";
   }
   .header {
     -ms-grid-row: 1;
@@ -604,7 +611,9 @@ ul li a {
     height: 100vh;
   }
   .grid-container {
-        grid-template-areas: "header" "main " "footer";
+        grid-template-areas: "header"
+ "main "
+ "footer";
   }
   .logo {
     width: 7.5rem;
@@ -1085,7 +1094,9 @@ ul li a {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
-      grid-template-areas: "texto-cafe video" "img        texto-granos" "fin__img   fin__img";
+      grid-template-areas: "texto-cafe video"
+ "img        texto-granos"
+ "fin__img   fin__img";
 }
 
 .nosotros__media video {
@@ -1429,7 +1440,9 @@ td {
         grid-template-columns: 1fr;
     -ms-grid-rows: (auto)[3];
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: 'texto-cafe video' 'img        texto-granos' 'fin__img   fin__img';
+        grid-template-areas: 'texto-cafe video'
+ 'img        texto-granos'
+ 'fin__img   fin__img';
   }
   .nosotros__img {
     height: 30rem;
@@ -1481,7 +1494,9 @@ td {
     font-size: 16px;
   }
   .grid-container {
-        grid-template-areas: "header" "main " "footer";
+        grid-template-areas: "header"
+ "main "
+ "footer";
   }
   .header__pages {
     -ms-grid-row: 1;
@@ -1508,7 +1523,11 @@ td {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+        grid-template-areas: 'texto-cafe'
+ 'video'
+ 'texto-granos'
+ 'img'
+ 'fin__img';
   }
   /* Fin page nosotros 993px */
   /* ----------------------------------------------------- */
@@ -1604,7 +1623,11 @@ td {
     width: 100%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+        grid-template-areas: 'texto-cafe'
+ 'video'
+ 'texto-granos'
+ 'img'
+ 'fin__img';
   }
   .nosotros__media video {
     -ms-grid-row: 2;
@@ -1892,7 +1915,11 @@ td {
   /* -------------------------------------------------------------- */
   /* Inicio Page nosotro 576px */
   .section__nosotros {
-        grid-template-areas: 'texto-cafe' 'video' 'texto-granos' 'img' 'fin__img';
+        grid-template-areas: 'texto-cafe'
+ 'video'
+ 'texto-granos'
+ 'img'
+ 'fin__img';
   }
   .logo {
     width: 7.5rem;
